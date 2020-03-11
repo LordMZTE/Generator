@@ -1,0 +1,12 @@
+{
+  "_comment": "Blocks",
+  "block.mztegenerator.generator": "Generator",
+
+
+  "_comment": "Creative Tabs",
+  "itemGroup.mztegenerator": "Generator",
+
+  "_comment": "GUI",
+  "container.mztegenerator.generator": "Generator",
+  "tooltip.mztegenerator.generatorEnergy": "%s / %s FE"
+}

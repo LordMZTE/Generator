@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "mztegenerator:block/generator",
+        "down": "mztegenerator:block/generator",
+        "up": "mztegenerator:block/generator",
+        "east": "mztegenerator:block/generator",
+        "west": "mztegenerator:block/generator",
+        "north": "mztegenerator:block/generator_front",
+        "south": "mztegenerator:block/generator"
+    }
+}
