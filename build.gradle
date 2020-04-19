@@ -19,6 +19,8 @@ archivesBaseName = 'mztegenerator'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
+sourceSets.main.resources.srcDirs = ['src/main/resources', 'src/generated/resources']
+
 minecraft {
     // The mappings can be changed at any time, and must be in the following format.
     // snapshot_YYYYMMDD   Snapshot are built nightly.
@@ -74,10 +76,11 @@ minecraft {
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/')
+            args '--mod', 'mztegenerator', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
 
             mods {
-                examplemod {
+                mztegenerator {
                     source sourceSets.main
                 }
             }
